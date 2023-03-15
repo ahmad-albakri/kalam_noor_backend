@@ -9,5 +9,6 @@
         public int TotalMark { get; set; }
 
         public int ClassId { get; set; }
+        public bool IsEnrichment { get; set; }
     }
 }
