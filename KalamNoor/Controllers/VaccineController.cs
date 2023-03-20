@@ -9,21 +9,21 @@ namespace KalamNoor.Controllers
         [Route("VaccineController/InsertVaccine")]
         [HttpPost]
 
-        public int InsertVaccine(Vaccine vaccine)
+        public int InsertVaccine([FromBody] Vaccine vaccine)
         {
             return VaccineManager.InsertVaccine(vaccine);
         }
         [Route("VaccineController/UpdateVaccine")]
         [HttpPost]
 
-        public int UpdateVaccine(Vaccine vaccine)
+        public int UpdateVaccine([FromBody] Vaccine vaccine)
         {
             return VaccineManager.UpdateVaccine(vaccine);
         }
         [Route("VaccineController/DeleteVaccine")]
         [HttpPost]
 
-        public int DeleteVaccine(Vaccine vaccine)
+        public int DeleteVaccine([FromBody] Vaccine vaccine)
         {
             return VaccineManager.DeleteVaccine(vaccine);
         }

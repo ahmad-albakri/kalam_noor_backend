@@ -12,13 +12,13 @@ namespace KalamNoor.Controllers
 
         [Route("StudentController/InsertStudent")]
         [HttpPost]
-        public int InsertStudent(Student student)
+        public int InsertStudent([FromBody] Student student)
         {
             return StudentManager.InsertStudent(student);
         }
         [Route("StudentController/UpdateStudent")]
         [HttpPost]
-        public int UpdateStudent(Student student)
+        public int UpdateStudent([FromBody] Student student)
         {
             return StudentManager.UpdateStudent(student);
         }
@@ -34,19 +34,19 @@ namespace KalamNoor.Controllers
 
         [Route("StudentController/InsertMedicalRecord")]
         [HttpPost]
-        public int InsertMedicalRecord(MedicalRecord medicalRecord)
+        public int InsertMedicalRecord([FromBody] MedicalRecord medicalRecord)
         {
             return MedicalRecordManager.InsertMedicalRecord(medicalRecord);
         }
         [Route("StudentController/UpdateMedicalRecord")]
         [HttpPost]
-        public int UpdateMedicalRecord(MedicalRecord medicalRecord)
+        public int UpdateMedicalRecord([FromBody] MedicalRecord medicalRecord)
         {
             return MedicalRecordManager.UpdateMedicalRecord(medicalRecord);
         }
         [Route("StudentController/DeleteMedicalRecord")]
         [HttpPost]
-        public int DeleteMedicalRecord(MedicalRecord medicalRecord)
+        public int DeleteMedicalRecord([FromBody] MedicalRecord medicalRecord)
         {
             return MedicalRecordManager.DeleteMedicalRecord(medicalRecord);
         }
@@ -62,19 +62,19 @@ namespace KalamNoor.Controllers
         #region PsycologicalStatusesStudent Controller
         [Route("StudentController/InsertPsychologicalStatusesStudent")]
         [HttpPost]
-        public int InsertPsycologicalStatusesStudent(PsychologicalStatusesStudent statusesStudent)
+        public int InsertPsycologicalStatusesStudent([FromBody] PsychologicalStatusesStudent statusesStudent)
         {
             return PsycologicalStatusesStudentManager.InsertPsycologicalStatusesStudent(statusesStudent);
         }
         [Route("StudentController/UpdatePsychologicalStatusesStudent")]
         [HttpPost]
-        public int UpdatePsycologicalStatusesStudent(PsychologicalStatusesStudent statusesStudent)
+        public int UpdatePsycologicalStatusesStudent([FromBody] PsychologicalStatusesStudent statusesStudent)
         {
             return PsycologicalStatusesStudentManager.UpdatePsycologicalStatusesStudent(statusesStudent);
         }
         [Route("StudentController/DeletePsychologicalStatusesStudent")]
         [HttpPost]
-        public int DeletePsycologicalStatusesStudent(PsychologicalStatusesStudent statusesStudent)
+        public int DeletePsycologicalStatusesStudent([FromBody] PsychologicalStatusesStudent statusesStudent)
         {
             return PsycologicalStatusesStudentManager.DeletePsycologicalStatusesStudent(statusesStudent);
         }

@@ -8,21 +8,21 @@ namespace KalamNoor.Controllers
     {
         [Route("PreviousSchoolController/InserPreviousSchool")]
         [HttpPost]
-        public int InsertPreviousSchool(PreviousSchool previousSchool)
+        public int InsertPreviousSchool([FromBody] PreviousSchool previousSchool)
         {
             return PreviousSchoolManager.InsertPreviousShcool(previousSchool);
         }
 
         [Route("PreviousSchoolController/UpdatePreviousShcool")]
         [HttpPost]
-        public int UpdatePreviousShcool(PreviousSchool previousSchool)
+        public int UpdatePreviousShcool([FromBody] PreviousSchool previousSchool)
         {
             return PreviousSchoolManager.UpdatePreviousShcool(previousSchool);
         }
 
         [Route("PreviousSchoolController/DeletePreviousShcool")]
         [HttpPost]
-        public int DeletePreviousShcool(PreviousSchool previousSchool)
+        public int DeletePreviousShcool([FromBody] PreviousSchool previousSchool)
         {
             return PreviousSchoolManager.DeletePreviousShcool(previousSchool);
         }

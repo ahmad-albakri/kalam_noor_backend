@@ -8,19 +8,19 @@ namespace KalamNoor.Controllers
     {
         [Route("CourseController/InsertCourse")]
         [HttpPost]
-        public int InsertCourse(Course course)
+        public int InsertCourse([FromBody] Course course)
         {
             return CourseManager.InsertCourse(course);
         }
         [Route("CourseController/UpdateCourse")]
         [HttpPost]
-        public int UpdateCourse(Course course)
+        public int UpdateCourse([FromBody] Course course)
         {
             return CourseManager.UpdateCourse(course);
         }
         [Route("CourseController/DeleteCourse")]
         [HttpPost]
-        public int DeleteCourse(Course course)
+        public int DeleteCourse([FromBody] Course course)
         {
             return CourseManager.DeleteCourse(course);
         }

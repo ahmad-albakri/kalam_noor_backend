@@ -8,19 +8,19 @@ namespace KalamNoor.Controllers
     {
         [Route("ClassController/InsertClass")]
         [HttpPost]
-        public int InsertClass(Class cls)
+        public int InsertClass([FromBody] Class cls)
         {
             return ClassManager.InsertClass(cls);
         }
         [Route("ClassController/UpdateClass")]
         [HttpPost]
-        public int UpdateClass(Class cls)
+        public int UpdateClass([FromBody] Class cls)
         {
             return ClassManager.UpdateClass(cls);
         }
         [Route("ClassController/DeleteClass")]
         [HttpPost]
-        public int DeleteClass(Class cls)
+        public int DeleteClass([FromBody] Class cls)
         {
             return ClassManager.DeleteClass(cls);
         }

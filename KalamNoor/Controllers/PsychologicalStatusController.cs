@@ -8,19 +8,20 @@ namespace KalamNoor.Controllers
     {
         [Route("PsychologicalStatusController/InsertPsychologicalStatus")]
         [HttpPost]
-        public int InsertPsychologicalStatus(PsychologicalStatus status)
+        public int InsertPsychologicalStatus([FromBody] PsychologicalStatus status)
         {
             return PsychologicalStatusManager.InsertPsychologicalStatus(status);
         }
         [Route("PsychologicalStatusController/UpdatePsychologicalStatus")]
         [HttpPost]
-        public int UpdatePsychologicalStatus(PsychologicalStatus status)
+        public int UpdatePsychologicalStatus([FromBody] PsychologicalStatus status)
         {
             return PsychologicalStatusManager.UpdatePsychologicalStatus(status);
         }
         [Route("PsychologicalStatusController/DeletePsychologicalStatus")]
         [HttpPost]
-        public int DeletePsychologicalStatus(PsychologicalStatus status)
+        public int DeletePsychologicalStatus([FromBody] PsychologicalStatus status)
+
         {
             return PsychologicalStatusManager.DeletePsychologicalStatus(status);
         }

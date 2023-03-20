@@ -8,19 +8,19 @@ namespace KalamNoor.Controllers
     {
         [Route("ClassRoomController/InsertClassRoom")]
         [HttpPost]
-        public int InsertClassRoom(ClassRoom classRoom)
+        public int InsertClassRoom([FromBody] ClassRoom classRoom)
         {
             return ClassRoomManager.InsertClassRoom(classRoom);
         }
         [Route("ClassRoomController/UpdateClassRoom")]
         [HttpPost]
-        public int UpdateClassRoom(ClassRoom classRoom)
+        public int UpdateClassRoom([FromBody] ClassRoom classRoom)
         {
             return ClassRoomManager.UpdateClassRoom(classRoom);
         }
         [Route("ClassRoomController/DeleteClassRoom")]
         [HttpPost]
-        public int DeleteClassRoom(ClassRoom classRoom)
+        public int DeleteClassRoom([FromBody] ClassRoom classRoom)
         {
             return ClassRoomManager.DeleteClassRoom(classRoom);
         }

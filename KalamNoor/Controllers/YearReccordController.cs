@@ -9,13 +9,13 @@ namespace KalamNoor.Controllers
     {
         [Route("YearReccordController/InsertYearReccord")]
         [HttpPost]
-        public int InsertYearReccord(YearRecord record)
+        public int InsertYearReccord([FromBody] YearRecord record)
         {
             return YearReccordManger.InsertYearReccord(record);
         }
         [Route("YearReccordController/UpdateYearREccord")]
         [HttpPost]
-        public int UpdateYearReccord(YearRecord record)
+        public int UpdateYearReccord([FromBody] YearRecord record)
         {
             return YearReccordManger.UpdateYearREccord(record);
         }

@@ -8,19 +8,19 @@ namespace KalamNoor.Controllers
     {
         [Route("AreaController/InsertArea")]
         [HttpPost]
-        public int InsertArea(Area area)
+        public int InsertArea([FromBody] Area area)
         {
             return AreaManager.InsertArea(area);
         }
         [Route("AreaController/UpdateArea")]
         [HttpPost]
-        public int UpdateArea(Area area)
+        public int UpdateArea([FromBody] Area area)
         {
             return AreaManager.UpdateArea(area);
         }
         [Route("AreaController/DeleteArea")]
         [HttpPost]
-        public int DeleteArea(Area area)
+        public int DeleteArea([FromBody] Area area)
         {
             return AreaManager.DeleteArea(area);
         }
