@@ -25,7 +25,7 @@ namespace KalamNoor.Controllers
             return CourseManager.DeleteCourse(course);
         }
         [Route("CourseController/GetCourses")]
-        [HttpPost]
+        [HttpGet]
         public List<Course> GetCourses()
         {
             return CourseManager.GetCourses();

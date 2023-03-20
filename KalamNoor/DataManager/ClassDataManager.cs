@@ -1,5 +1,4 @@
-﻿using KalamNoor.Models.Cities;
-using KalamNoor.Models.Classes;
+﻿using KalamNoor.Models.Classes;
 using System.Data;
 using System.Data.SqlClient;
 

@@ -1,6 +1,5 @@
 ﻿using KalamNoor.Manager;
 using KalamNoor.Models.Addresses;
-using KalamNoor.Models.Cities;
 using Microsoft.AspNetCore.Mvc;
 
 namespace KalamNoor.Controllers

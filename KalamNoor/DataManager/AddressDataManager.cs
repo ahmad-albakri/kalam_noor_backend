@@ -1,5 +1,4 @@
 ﻿using KalamNoor.Models.Addresses;
-using KalamNoor.Models.Cities;
 using KalamNoor.Models.Students;
 using System.Data;
 using System.Data.SqlClient;

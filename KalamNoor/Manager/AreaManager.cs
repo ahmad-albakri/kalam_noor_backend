@@ -1,5 +1,5 @@
 ﻿using KalamNoor.DataManager;
-using KalamNoor.Models.Areas;
+using KalamNoor.Models.Addresses;
 
 namespace KalamNoor.Manager
 {

@@ -1,4 +1,4 @@
-﻿namespace KalamNoor.Models.Cities
+﻿namespace KalamNoor.Models.Addresses
 {
     public class City
     {

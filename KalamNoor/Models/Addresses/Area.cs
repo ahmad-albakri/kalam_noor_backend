@@ -1,4 +1,4 @@
-﻿namespace KalamNoor.Models.Areas
+﻿namespace KalamNoor.Models.Addresses
 {
     public class Area
     {

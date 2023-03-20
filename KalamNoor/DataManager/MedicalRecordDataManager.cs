@@ -1,5 +1,4 @@
-﻿using KalamNoor.Models.Areas;
-using KalamNoor.Models.MedicalRecords;
+﻿using KalamNoor.Models.MedicalRecords;
 using System.Data;
 using System.Data.SqlClient;
 

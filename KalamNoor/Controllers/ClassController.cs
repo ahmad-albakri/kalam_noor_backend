@@ -1,5 +1,4 @@
 ﻿using KalamNoor.Manager;
-using KalamNoor.Models.Areas;
 using KalamNoor.Models.Classes;
 using Microsoft.AspNetCore.Mvc;
 

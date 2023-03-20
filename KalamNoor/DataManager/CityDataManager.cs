@@ -1,6 +1,6 @@
 ﻿using System.Data;
 using System.Data.SqlClient;
-using KalamNoor.Models.Cities;
+using KalamNoor.Models.Addresses;
 
 namespace KalamNoor.DataManager
 {
