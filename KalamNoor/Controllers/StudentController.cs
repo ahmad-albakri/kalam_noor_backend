@@ -28,6 +28,43 @@ namespace KalamNoor.Controllers
         {
             return StudentManager.GetStudents();
         }
+        [Route("StudentController/GetStudentById")]
+        [HttpGet]
+        public Student GetStudentById(int id)
+        {
+            return StudentManager.GetStudentById(id);
+        }
+        [Route("StudentController/GetStudentByName")]
+        [HttpGet]
+        public List<Student> GetStudentByName(string name)
+        {
+            return StudentManager.GetStudentByName(name);
+        }
+        [Route("StudentController/GetStudentsByIsMale")]
+        [HttpGet]
+        public List<Student> GetMaleStudents( )
+        {
+            return StudentManager.GetStudentsByIsMale();
+        }
+        [Route("StudentController/GetStudentsByIsFemale")]
+        [HttpGet]
+        public List<Student> GetFemaleStudents()
+        {
+            return StudentManager.GetStudentsByIsFemale();
+        }
+        [Route("StudentController/GetStudentsByFatherId")]
+        [HttpGet]
+        public List<Student> GetStudentByFatherId(int id) {
+            return StudentManager.GetStudentsByFatherId(id);
+        }
+        [Route("StudentController/GetStudentsByMotherId")]
+        [HttpGet]
+        public List<Student> GetStudentsByMotherId(int id)
+        {
+            return StudentManager.GetStudentsByMotherId(id);
+        }
+
+
         #endregion
 
         #region MedicalRecord Controller

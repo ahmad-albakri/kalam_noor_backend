@@ -1,5 +1,6 @@
 ﻿using KalamNoor.DataManager;
 using KalamNoor.Models.Families;
+using KalamNoor.Models.Students;
 
 namespace KalamNoor.Manager
 {
@@ -23,6 +24,18 @@ namespace KalamNoor.Manager
 
             return FatherDataManager.DeleteFather(father);
 
+        }
+        public static Father GetFatherById(int id)
+        {
+            List<Father> fathers = GetFathers();
+            foreach (Father father in fathers)
+            {
+                if (father.ID == id)
+                {
+                    return father;
+                }
+            }
+            return null;
         }
     }
 }

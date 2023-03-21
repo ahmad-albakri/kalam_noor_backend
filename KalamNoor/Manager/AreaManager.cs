@@ -20,7 +20,19 @@ namespace KalamNoor.Manager
         public static int UpdateArea(Area area)
         {
             return AreaDataManager.UpdateArea(area);
-
         }
+        public static Area GetAreaById(int id)
+        {
+            List<Area> areas = GetAreas();
+            foreach (Area area in areas)
+            {
+                if (area.ID==id)
+                {
+                    return area;
+                }
+            }
+            return null;
+        }
+        //TOODO: ADD CONTROLLER
     }
 }

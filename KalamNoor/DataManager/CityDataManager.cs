@@ -51,5 +51,41 @@ namespace KalamNoor.DataManager
             int result = BaseDataManager.ExecuteNonQuery(sqlCommand);
             return result;
         }
+        public static int UpdateCity(City city)
+        {
+            if (city == null) return 0;
+
+            string sqlStatement = "UPDATE  [dbo].[Cities] SET " +
+                                  "Name=@name " +
+                                  "WHERE ID=@id;";
+
+            SqlCommand sqlCommand = new SqlCommand()
+            {
+                CommandText = sqlStatement,
+                CommandType = CommandType.Text,
+            };
+            sqlCommand.Parameters.Add(new SqlParameter("@id", city.ID));
+            sqlCommand.Parameters.Add(new SqlParameter("@name", city.Name));
+
+            int result = BaseDataManager.ExecuteNonQuery(sqlCommand);
+            return result;
+        }
+        public static int DeleteCity(City city)
+        {
+            if (city == null) return 0;
+
+            string sqlStatement = "DELETE FROM [dbo].[Cities] WHERE ID=@id;";
+
+            SqlCommand sqlCommand = new SqlCommand()
+            {
+                CommandText = sqlStatement,
+                CommandType = CommandType.Text,
+            };
+            sqlCommand.Parameters.Add(new SqlParameter("@id", city.ID));
+
+            int result = BaseDataManager.ExecuteNonQuery(sqlCommand);
+            return result;
+        }
+
     }
 }

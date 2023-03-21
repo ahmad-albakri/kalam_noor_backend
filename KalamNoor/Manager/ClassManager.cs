@@ -20,7 +20,19 @@ namespace KalamNoor.Manager
         public static List<Class> GetClasses()
         {
             return ClassDataManager.GetClasses().ToList();
-
         }
+        public static Class GetClassById(int id)
+        {
+            List<Class> classes = GetClasses();
+            foreach (Class cls in classes)
+            {
+                if (cls.ID==id)
+                {
+                    return cls;
+                }
+            }
+            return null;
+        }
+        
     }
 }

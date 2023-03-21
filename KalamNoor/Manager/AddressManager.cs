@@ -22,6 +22,18 @@ namespace KalamNoor.Manager
         return AddressDataManager.GetAddresses().ToList();
         
         }
+        public static Address GetAddressById(int id)
+        {
+            List<Address> addresses = GetAddresses();
+            foreach (Address address in addresses)
+            {
+                if (address.ID==id)
+                {
+                    return address;
+                }
+            }
+            return null;
+        }
 
     }
 }
